@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mon restaurant italien</title>
+</head>
+
+<body>
+  <header>
+    <h1>Mon restaurant italien</h1>
+    <nav>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#reservation">Réservation</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="accueil">
+      <h2>Bienvenue dans mon restaurant italien</h2>
+      <p>Nous proposons les meilleures pizzas et pâtes de la ville!</p>
+    </section>
+
+    <section id="menu">
+      <h2>Notre menu</h2>
+      <ul>
+        <li>Pizza Margherita</li>
+        <li>Pizza Pepperoni</li>
+        <li>Lasagne</li>
+        <li>Spaghetti Carbonara</li>
+      </ul>
+    </section>
+
+    <section id="galerie">
+      <h2>Galerie d'images</h2>
+      <img src="img1.jpg" alt="pizza margherita">
+      <img src="img2.jpg" alt="lasagne">
+      <img src="img3.jpg" alt="spaghetti carbonara">
+    </section>
+
+    <section id="contact">
+      <h2>Contactez-nous</h2>
+      <form action="submit-form.php" method="post">
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+        <input type="submit" value="Envoyer">
+      </form>
+    </section>
+
+    <section id="reservation">
+      <h2>Réservez votre table</h2>
+      <form action="submit-reservation.php" method="post">
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+        <label for="heure">Heure:</label>
+        <input type="time" id="heure" name="heure">
+        <label for="nombre">Nombre de personnes
